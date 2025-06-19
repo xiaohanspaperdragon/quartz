@@ -162,7 +162,7 @@ async function setupExplorer(currentSlug: FullSlug) {
       mapFn: new Function("return " + (dataFns.mapFn || "undefined"))(),
     }
 
-    // Get folder state from local storage
+    // Get folder state from session storage
     const storageTree = sessionStorage.getItem("fileTree")
     const serializedExplorerState = storageTree && opts.useSavedState ? JSON.parse(storageTree) : []
     const oldIndex = new Map<string, boolean>(
