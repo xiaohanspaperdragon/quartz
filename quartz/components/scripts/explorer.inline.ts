@@ -263,6 +263,9 @@ document.addEventListener("prenav", async () => {
   const explorer = document.querySelector(".explorer-ul")
   if (!explorer) return
   sessionStorage.setItem("explorerScrollTop", explorer.scrollTop.toString())
+  if (!currentExplorerState) return
+  const stringifiedFileTree = JSON.stringify(currentExplorerState)
+  localStorage.setItem("fileTree", stringifiedFileTree)
 })
 
 document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
