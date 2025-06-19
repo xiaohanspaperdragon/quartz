@@ -74,9 +74,6 @@ function toggleFolder(evt: MouseEvent) {
       collapsed: isCollapsed,
     })
   }
-
-  const stringifiedFileTree = JSON.stringify(currentExplorerState)
-  localStorage.setItem("fileTree", stringifiedFileTree)
 }
 
 function createFileNode(currentSlug: FullSlug, node: FileTrieNode): HTMLLIElement {
