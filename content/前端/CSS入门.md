@@ -1,5 +1,5 @@
 ---
-title: CSS入门门
+title: CSS入门
 author:
   - 潇寒paper龙
   - 潇寒子
